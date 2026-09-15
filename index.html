@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Pasarela — almacén y cafetería en Huechuraba</title>
+<meta name="description" content="Almacén y Cafetería La Pasarela, San Pedro de Atacama 2183, Huechuraba. Queques caseros, café, sándwiches, huevos duros y helados. Abierto desde las 6:30 de la mañana. 5,0 ★ en Google.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#2C3B58">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23F3ECDD'/%3E%3Crect x='5' y='5' width='54' height='54' rx='6' fill='none' stroke='%232C3B58' stroke-width='3'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-weight='bold' font-size='30' fill='%23C2362B'%3ELP%3C/text%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="Almacén y Cafetería La Pasarela">
+<meta property="og:title" content="La Pasarela — el almacén de las tres B, en Huechuraba">
+<meta property="og:description" content="Queques caseros, café, sándwiches y helados. Abierto desde las 6:30 de la mañana. 5,0 ★ con 9 reseñas, ninguna bajo cinco estrellas.">
+<meta property="og:url" content="https://mmedinacode.github.io/La-Pasarela-Web/">
+<meta property="og:image" content="https://mmedinacode.github.io/La-Pasarela-Web/fotos/hero-queque.jpg">
+<meta property="og:image:alt" content="Queque casero espolvoreado con azúcar flor en La Pasarela, Huechuraba">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ultra&family=Sarabun:wght@300;400;500;600;700&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Loader: el letrero pintado de la fachada, apareciendo. -->
+<div id="loader" class="loader" aria-hidden="true">
+  <div class="loader-letrero">
+    <p class="loader-txt">La Pasarela</p>
+    <p class="loader-sub">Almacén y Cafetería</p>
+  </div>
+</div>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="head">
+  <div class="head-in">
+    <a class="brand" href="#inicio" data-tab="inicio" aria-label="La Pasarela, ir al inicio">
+      <span class="brand-mark" aria-hidden="true">LP</span>
+      <span class="brand-txt"><strong>La Pasarela</strong><em>Almacén y Cafetería</em></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <ul class="nav-links">
+        <li><a href="#inicio"    data-tab="inicio" class="on">Inicio</a></li>
+        <li><a href="#nosotros"  data-tab="nosotros">Nosotros</a></li>
+        <li><a href="#carta"     data-tab="carta">Carta</a></li>
+        <li><a href="#resenas"   data-tab="resenas">Reseñas</a></li>
+        <li><a href="#redes"     data-tab="redes">Redes</a></li>
+        <li><a href="#visitanos" data-tab="visitanos">Visítanos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ══════════════ INICIO ══════════════ -->
+<section class="tab-panel on" data-tab-panel="inicio" id="inicio">
+  <div class="hero">
+    <div class="hero-txt">
+      <p class="eyebrow">San Pedro de Atacama 2183 · Huechuraba</p>
+      <h1>Bueno,<br>bonito<br><em>y barato.</em></h1>
+      <p class="hero-lead">
+        No lo decimos nosotros: lo escribió un cliente en Google.
+        Queques caseros, café, sándwiches, huevos duros y helados,
+        <strong>desde las seis y media de la mañana</strong>.
+      </p>
+
+      <ul class="sellos" aria-label="Lo que hay">
+        <li>Queques</li>
+        <li>Sándwich</li>
+        <li>Huevos duros</li>
+        <li>Té y café</li>
+        <li>Helados</li>
+      </ul>
+
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="#carta" data-tab="carta">Ver la carta</a>
+        <a class="btn btn-ghost" href="#resenas" data-tab="resenas">Leer las reseñas</a>
+      </div>
+      <p class="hero-open">
+        <span class="dot" id="statusDot" aria-hidden="true"></span>
+        <span data-horario-estado>Lunes a viernes de 06:30 a 14:00</span>
+      </p>
+    </div>
+    <figure class="hero-img">
+      <img src="fotos/hero-queque.jpg" alt="Queque casero espolvoreado con azúcar flor, cortado en porciones" fetchpriority="high" decoding="async">
+      <figcaption class="hero-cap">El queque, su destacado nº1</figcaption>
+    </figure>
+  </div>
+
+  <div class="wrap">
+    <div class="cifras reveal stagger">
+      <div><b data-contar>5,0</b><span>★ en Google</span></div>
+      <div><b data-contar>9</b><span>reseñas, ninguna mala</span></div>
+      <div><b>06:30</b><span>abrimos</span></div>
+      <div><b data-contar>3</b><span>las tres B</span></div>
+    </div>
+
+    <div class="tri reveal stagger">
+      <article class="tri-card">
+        <h3>Lo atiende el matrimonio</h3>
+        <p>“Un ejemplo de emprendimiento familiar con alto valor en el
+           servicio (…) la atención directa de sus dueños,
+           <strong>un matrimonio muy amable</strong>.”</p>
+        <a href="#resenas" data-tab="resenas" class="lnk">Leer reseñas →</a>
+      </article>
+      <article class="tri-card">
+        <h3>Queques del horno</h3>
+        <p>Los hacen ellos. <strong>Queque</strong> es el primer destacado
+           de su carta en Google, antes que el helado y las galletas.</p>
+        <a href="#carta" data-tab="carta" class="lnk">Ver la carta →</a>
+      </article>
+      <article class="tri-card">
+        <h3>Abren a las 6:30</h3>
+        <p>Antes que nadie en el barrio. El sábado, sólo de
+           <strong>7 a 10 de la mañana</strong>.</p>
+        <a href="#visitanos" data-tab="visitanos" class="lnk">Ver el horario →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ NOSOTROS ══════════════ -->
+<section class="tab-panel" data-tab-panel="nosotros" id="nosotros">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Nosotros</p>
+      <h2>Un almacén<br>de verdad</h2>
+      <p class="sec-lead">
+        Con los murales pintados a mano en la pared.
+      </p>
+    </header>
+
+    <div class="split reveal">
+      <figure class="split-img">
+        <img src="fotos/mural-te-cafe.jpg" alt="Mural pintado a mano en la fachada: sandwich, queques, huevos duros, té y café" loading="lazy" decoding="async">
+        <figcaption>El mural dice lo que hay</figcaption>
+      </figure>
+      <div class="split-txt">
+        <h3>La carta está en la pared</h3>
+        <p>
+          En la fachada de ladrillo azul hay un mural pintado a mano, con
+          letras de los años cincuenta y un personaje —un niño repartidor
+          con su perro— sosteniendo una taza. Y lo que dice es,
+          literalmente, la carta:
+        </p>
+        <p class="mural-lista">
+          <span>Sandwich</span><span>Queques</span><span>Huevos duros</span><span>Té · Café</span>
+        </p>
+        <p>
+          Al lado, en la otra pared, hay <strong>un barquillo de helado del
+          alto del muro</strong>. Los colores de esta página salen de esos
+          dos murales.
+        </p>
+      </div>
+    </div>
+
+    <div class="split split-rev reveal">
+      <figure class="split-img">
+        <img src="fotos/queques-horno.jpg" alt="Lata de queques caseros recién salidos del horno" loading="lazy" decoding="async">
+        <figcaption>Recién salidos del horno</figcaption>
+      </figure>
+      <div class="split-txt">
+        <h3>“Las tres B”</h3>
+        <blockquote class="cita">
+          “Un almacén que por lejos se ganó las tres B: bueno, bonito y
+          barato. Una atención de primera, preocupación por sus clientes…
+          así que amigos, no se olviden de este lugar.”
+          <cite>johan oviedo, en Google</cite>
+        </blockquote>
+        <p>
+          Esa reseña tiene <strong>cuatro años</strong>. Y el dueño la
+          contestó igual: <em>“Muchas gracias por tu preferencia Johan.”</em>
+          Contesta todas, una por una, por nombre.
+        </p>
+        <a href="#carta" data-tab="carta" class="lnk">Ver todo lo que hay →</a>
+      </div>
+    </div>
+
+    <div class="gal reveal stagger">
+      <figure><img src="fotos/mural-helado.jpg" alt="Mural del barquillo de helado y pizarrón en la vereda" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/alfajores.jpg" alt="Alfajores artesanales envueltos" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/vitrina.jpg" alt="Vitrina refrigerada con yogures y bebidas" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/desde-adentro.jpg" alt="La calle vista desde adentro del almacén, a través del arco" loading="lazy" decoding="async"></figure>
+    </div>
+    <p class="note">Todas las fotos son del propio local, de su ficha de Google Maps.</p>
+
+    <!--
+      ⚠️ SE DESCARTÓ LA MEJOR FOTO DE LA FACHADA.
+      Era la toma completa de los dos arcos, pero en ella se ve a la señora
+      que atiende, de frente y perfectamente reconocible. Es casi con
+      seguridad la dueña, pero no se puede asumir su consentimiento.
+    -->
+    <div class="aviso reveal">
+      <strong>Nota honesta:</strong> la mejor foto de su fachada —la de los
+      dos arcos completos— no se usa acá, porque sale la señora que atiende
+      de frente y no le hemos preguntado. Con una foto del frente sin
+      nadie, esta página mejora sola.
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CARTA ══════════════ -->
+<section class="tab-panel" data-tab-panel="carta" id="carta">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Carta</p>
+      <h2>Lo que hay</h2>
+      <p class="sec-lead">
+        Lo que dicen sus murales, sus destacados de Google y sus fotos.
+      </p>
+    </header>
+
+    <div class="aviso reveal">
+      <strong>Sobre los precios:</strong> La Pasarela no publica carta con
+      valores. Los <b>dos únicos precios que constan</b> están escritos en
+      un cartel de su mostrador, y van más abajo. Todo lo demás va sin
+      precio, en vez de con uno inventado.
+    </div>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>De la cafetería</h3>
+        <span class="carta-bloque-n">sus tres destacados</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/hero-queque.jpg" alt="Queque casero cortado en porciones" loading="lazy" decoding="async">
+          <div><h4>Queque</h4><p>El destacado nº1 de su carta en Google. Lo hornean ellos.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item">
+          <img src="fotos/mural-helado.jpg" alt="Mural del barquillo de helado" loading="lazy" decoding="async">
+          <div><h4>Helado americano</h4><p>Su destacado nº2. Tienen un barquillo pintado del alto de la pared.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item">
+          <img src="fotos/galletas.jpg" alt="Estantería de galletas" loading="lazy" decoding="async">
+          <div><h4>Galletas</h4><p>Su destacado nº3.</p></div>
+          <span class="price">Consultar</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Lo que dice el mural</h3>
+        <span class="carta-bloque-n">4 · pintado en la fachada</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/mural-te-cafe.jpg" alt="Mural con la oferta del local" loading="lazy" decoding="async">
+          <div><h4>Sándwich</h4><p>Primero en la lista del mural.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Huevos duros</h4><p>De los pocos lugares donde todavía se piden así.</p></div><span class="price">Consultar</span></article>
+        <article class="menu-item">
+          <img src="fotos/maquina-cafe.jpg" alt="Máquina de café automática" loading="lazy" decoding="async">
+          <div><h4>Té y café</h4><p>Tienen máquina de café automática, de autoservicio.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item">
+          <img src="fotos/alfajores.jpg" alt="Alfajores artesanales" loading="lazy" decoding="async">
+          <div><h4>Alfajores artesanales</h4><p>Envueltos uno a uno, en el mostrador.</p></div>
+          <span class="price">Consultar</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Del almacén</h3>
+        <span class="carta-bloque-n">2 precios reales</span>
+      </header>
+      <!--
+        ⚠️ ESTOS DOS PRECIOS SON REALES.
+        Se leen en un cartel del mostrador, fotografiado en su ficha de
+        Google. Esa foto NO se publica (sale la señora que atiende, de
+        frente), pero el dato es legible y verificado.
+      -->
+      <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Hielo</h4><p>Precio escrito en un cartel de su mostrador.</p></div><span class="price">$1.000</span></article>
+        <article class="menu-item"><div><h4>Bidón de agua, 20 litros</h4><p>Mismo cartel.</p></div><span class="price">$2.000</span></article>
+        <article class="menu-item">
+          <img src="fotos/vitrina.jpg" alt="Vitrina refrigerada" loading="lazy" decoding="async">
+          <div><h4>Bebidas, yogures y batidos de proteína</h4><p>En su vitrina refrigerada.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item">
+          <img src="fotos/snacks.jpg" alt="Snacks con precios escritos a mano" loading="lazy" decoding="async">
+          <div><h4>Abarrotes y snacks</h4><p>Galletas, papas fritas y lo de siempre, con los precios escritos a mano.</p></div>
+          <span class="price">Consultar</span></article>
+      </div>
+    </section>
+
+    <p class="note">
+      Productos confirmados en los murales de su fachada, en los destacados
+      de su ficha de Google y en sus propias fotos. Conviene confirmar
+      precios en el local.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════ RESEÑAS ══════════════ -->
+<section class="tab-panel" data-tab-panel="resenas" id="resenas">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Reseñas</p>
+      <h2>5,0 ★ · 9 reseñas</h2>
+      <p class="sec-lead">Ninguna bajo cinco estrellas. Y el dueño contesta todas.</p>
+    </header>
+
+    <div class="revs reveal stagger">
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>Un almacén que x lejos se ganó las tres b bueno bonito y barato una atención de primera preocupación x sus clientes amabilidad en su atención y eso no es todo preocupación x sus clientes frecuentes así que amigos no se olviden de este lugar lo recomiendo</p>
+        <footer><b>johan oviedo</b><span>Reseña en Google · hace 4 años</span></footer>
+        <div class="respuesta">
+          <b>Respuesta del local</b>
+          <p>Muchas gracias por tu preferencia Johan.</p>
+        </div>
+      </blockquote>
+
+      <!-- La reseña de Marcelo está truncada en la vista pública de Google.
+           Se corta en un punto donde la frase cierra, y se marca con "…". -->
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>Un ejemplo de emprendimiento familiar con alto valor en el servicio. Como empresario, valoro profundamente los negocios donde la atención directa de sus dueños (un matrimonio muy amable) marca la diferencia competitiva…</p>
+        <footer><b>Marcelo Leiva</b><span>Local Guide · 197 reseñas · 1.161 fotos</span></footer>
+        <div class="respuesta">
+          <b>Respuesta del local</b>
+          <p>Gracias por tu preferencia Marcelo.</p>
+        </div>
+      </blockquote>
+
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>Siempre compro ai la sra que atiende muy buena persona y paciente todo muy fresco</p>
+        <footer><b>Alvaro</b><span>Local Guide · 51 reseñas</span></footer>
+        <div class="respuesta">
+          <b>Respuesta del local</b>
+          <p>Gracias Alvaro!</p>
+        </div>
+      </blockquote>
+    </div>
+
+    <div class="aviso reveal">
+      <strong>Tres personas distintas, en tres años distintos,</strong>
+      diciendo lo mismo: que atienden bien. Y las tres tienen respuesta del
+      local, con el nombre de quien escribió. <b>Eso no se compra.</b>
+    </div>
+
+    <div class="rev-cta reveal">
+      <a class="btn btn-solid" href="https://search.google.com/local/reviews?placeid=ChIJ0ciyJxnHYpYR8q2qagYH18w" target="_blank" rel="noopener">Leer las 9 reseñas</a>
+      <a class="btn btn-ghost" href="https://search.google.com/local/writereview?placeid=ChIJ0ciyJxnHYpYR8q2qagYH18w" target="_blank" rel="noopener">Dejar una reseña</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ REDES ══════════════ -->
+<section class="tab-panel" data-tab-panel="redes" id="redes">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Redes</p>
+      <h2>Dónde escribirnos</h2>
+      <p class="sec-lead">Sólo lo verificado. Ningún perfil inventado.</p>
+    </header>
+
+    <div class="redes">
+      <article class="red-card reveal">
+        <a class="red-card-head" href="https://wa.me/56958085436" target="_blank" rel="noopener">
+          <span class="red-logo red-logo-wsp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.82 9.82 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/></svg></span>
+          <span class="red-card-txt">
+            <b>+56 9 5808 5436</b>
+            <em>El número de su ficha de Google</em>
+          </span>
+          <span class="red-card-cta">Escribir →</span>
+        </a>
+        <a class="red-grid" href="https://wa.me/56958085436" target="_blank" rel="noopener"
+           data-cta="Escribir por WhatsApp" aria-label="Escribir a La Pasarela por WhatsApp">
+          <figure><img src="fotos/hero-queque.jpg" alt="Queque casero" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/queques-horno.jpg" alt="Queques recién horneados" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/alfajores.jpg" alt="Alfajores artesanales" loading="lazy" decoding="async"></figure>
+        </a>
+        <p class="red-pie">Por acá se encargan los queques.</p>
+      </article>
+
+      <article class="red-card reveal">
+        <a class="red-card-head" href="https://www.google.com/maps/search/?api=1&query=Almac%C3%A9n%20y%20Cafeter%C3%ADa%20La%20Pasarela&query_place_id=ChIJ0ciyJxnHYpYR8q2qagYH18w" target="_blank" rel="noopener">
+          <span class="red-logo red-logo-map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C7.31 0 3.5 3.81 3.5 8.5c0 6.38 8.5 15.5 8.5 15.5s8.5-9.12 8.5-15.5C20.5 3.81 16.69 0 12 0zm0 11.6a3.1 3.1 0 110-6.2 3.1 3.1 0 010 6.2z"/></svg></span>
+          <span class="red-card-txt">
+            <b>Ficha en Google Maps</b>
+            <em>5,0 ★ · 9 reseñas</em>
+          </span>
+          <span class="red-card-cta">Abrir →</span>
+        </a>
+        <a class="red-grid" href="https://www.google.com/maps/search/?api=1&query=Almac%C3%A9n%20y%20Cafeter%C3%ADa%20La%20Pasarela&query_place_id=ChIJ0ciyJxnHYpYR8q2qagYH18w" target="_blank" rel="noopener"
+           data-cta="Ver la ficha" aria-label="Abrir la ficha de La Pasarela en Google Maps">
+          <figure><img src="fotos/mural-te-cafe.jpg" alt="Mural de la fachada" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/mural-helado.jpg" alt="Mural del helado" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/vitrina.jpg" alt="Vitrina refrigerada" loading="lazy" decoding="async"></figure>
+        </a>
+        <p class="red-pie"><b>Contestan todas las reseñas</b>, por nombre.</p>
+      </article>
+    </div>
+
+    <!-- ⚠️ PENDIENTE: no se buscaron redes sociales propias. No se inventa
+         ninguna. -->
+    <div class="aviso aviso-ojo reveal">
+      <strong>Lo que hoy no tienen:</strong> ni sitio web ni redes sociales.
+      Su única presencia en internet es la ficha de Google — que cuidan
+      mejor que muchos locales grandes, pero que no les deja mostrar el
+      queque del día, los precios, ni que abren a las seis y media.
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ VISÍTANOS ══════════════ -->
+<section class="tab-panel" data-tab-panel="visitanos" id="visitanos">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Visítanos</p>
+      <h2>San Pedro de Atacama 2183</h2>
+    </header>
+
+    <div class="visit reveal">
+      <div class="visit-info">
+        <div class="vblock">
+          <h3>Dirección</h3>
+          <p>San Pedro de Atacama 2183<br>Huechuraba, Región Metropolitana</p>
+          <p class="sub">Plus Code J8R5+6X</p>
+        </div>
+
+        <div class="vblock">
+          <h3>Horario</h3>
+          <p class="estado"><span class="dot" aria-hidden="true"></span><span data-horario-estado>Lunes a viernes de 06:30 a 14:00</span></p>
+          <ul class="horario horario-semana" id="horario-lista" data-horario-semana>
+            <li data-dia="1"><span>Lunes</span><b>06:30 – 14:00</b></li>
+            <li data-dia="2"><span>Martes</span><b>06:30 – 14:00</b></li>
+            <li data-dia="3"><span>Miércoles</span><b>06:30 – 14:00</b></li>
+            <li data-dia="4"><span>Jueves</span><b>06:30 – 14:00</b></li>
+            <li data-dia="5"><span>Viernes</span><b>06:30 – 14:00</b></li>
+            <li data-dia="6"><span>Sábado</span><b>07:00 – 10:00</b></li>
+            <li data-dia="0"><span>Domingo</span><b class="cerrado">Cerrado</b></li>
+          </ul>
+          <p class="sub">
+            <b>El sábado abrimos sólo tres horas</b>, de 7 a 10 de la
+            mañana. Según su ficha de Google, consultada el 15-09-2026.
+          </p>
+        </div>
+
+        <div class="vblock">
+          <h3>Contacto</h3>
+          <a class="vtel" href="https://wa.me/56958085436" target="_blank" rel="noopener">
+            <span class="vtel-ico" style="background:#25D366" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.82 9.82 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/></svg></span>
+            <span class="vtel-txt">
+              <b>+56 9 5808 5436</b>
+              <em>WhatsApp · el número de su ficha</em>
+            </span>
+            <span class="vtel-flecha" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="vblock">
+          <h3>Cómo se puede pedir y pagar</h3>
+          <ul class="vpedir">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v2H3V5zm2 4h14l-1 5h-4v6h-2v-6H6L5 9zm-1 12h16v2H4v-2z"/></svg> Consumo en el lugar</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7V6a6 6 0 1112 0v1h3v14a2 2 0 01-2 2H5a2 2 0 01-2-2V7h3zm2 0h8V6a4 4 0 10-8 0v1z"/></svg> Para llevar</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a2 2 0 012 2v16a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2zm0 4v10h10V6H7zm4 13h2v1h-2v-1z"/></svg> Fpay y transferencia</li>
+          </ul>
+          <p class="sub">
+            Los dos primeros los declara su ficha de Google. Los carteles de
+            <b>Fpay</b> y transferencia están pegados en su mostrador.
+          </p>
+        </div>
+
+        <div class="vblock vblock-cta">
+          <a class="btn btn-solid" href="https://www.google.com/maps/dir/?api=1&destination=Almac%C3%A9n%20y%20Cafeter%C3%ADa%20La%20Pasarela&destination_place_id=ChIJ0ciyJxnHYpYR8q2qagYH18w" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn-ghost" href="https://waze.com/ul?ll=-33.3594795,-70.6901012&navigate=yes" target="_blank" rel="noopener">Ir con Waze</a>
+        </div>
+      </div>
+
+      <div class="visit-map">
+        <!-- ⚠️ SIN loading="lazy": vive en pestaña display:none y no cargaría. -->
+        <iframe
+          title="Mapa de La Pasarela en San Pedro de Atacama 2183, Huechuraba"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330!2d-70.6901012!3d-33.3594795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c71927b2c8d1%3A0xccd707066aaaadf2!2sAlmac%C3%A9n%20y%20Cafeter%C3%ADa%20La%20Pasarela!5e0!3m2!1ses!2scl!4v1757900000000!5m2!1ses!2scl"
+          width="100%" height="100%" style="border:0" allowfullscreen=""
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Flotantes. Derecha = contacto: sólo WhatsApp (su número real de la
+     ficha). No tienen redes sociales. Izquierda vacía: no hay delivery. -->
+<div class="float float-right">
+  <a class="fab fab-wsp" href="https://wa.me/56958085436" target="_blank" rel="noopener"
+     data-label="WhatsApp" aria-label="Escribir a La Pasarela por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.82 9.82 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/></svg></a>
+  <button class="fab fab-top" id="toTop" data-label="Volver arriba" aria-label="Volver arriba"
+    style="background:var(--azul);color:var(--crema)"><span aria-hidden="true">↑</span></button>
+</div>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <p class="foot-brand">La Pasarela</p>
+      <p>San Pedro de Atacama 2183 · Huechuraba</p>
+      <p data-horario-resumen>Lun a Vie 06:30 – 14:00 · Sáb 07:00 – 10:00 · Dom cerrado</p>
+      <p><a href="https://wa.me/56958085436" target="_blank" rel="noopener">+56 9 5808 5436</a></p>
+    </div>
+    <div class="foot-demo">
+      <p><strong>Esta es una demo.</strong> No es el sitio oficial de La Pasarela.</p>
+      <p>Hecha con datos públicos reales de su ficha de Google Maps
+         (verificados el 15-09-2026) para mostrarle al local cómo se vería
+         su página web.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.HORARIO = {
+  dias: ["06:30 - 14:00","06:30 - 14:00","06:30 - 14:00","06:30 - 14:00",
+         "06:30 - 14:00","07:00 - 10:00","Cerrado"],
+  fuente: "Ficha de Google Maps, 15-09-2026"
+};
+/* Sin window.REDES a propósito: no tienen ninguna red social publicada. */
+</script>
+
+<script src="script.js"></script>
+<script src="vida.js"></script>
+<script src="carta-fotos.js"></script>
+<script src="carrito.js"></script>
+<script src="horario.js"></script>
+<script src="redes.js"></script>
+</body>
+</html>
